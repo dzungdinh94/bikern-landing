@@ -1,0 +1,79 @@
+.banner {
+  height: 578px;
+  .content {
+    display: flex;
+    .wrap-title {
+      display: flex;
+      align-items: center;
+      height: 578px;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-family: "Race Sport Free";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 3.6rem;
+          line-height: 56px;
+          letter-spacing: -0.408px;
+          color: #ffffff;
+          text-transform: uppercase;
+          margin-bottom: 40px;
+        }
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+          color: #ffffff;
+        }
+      }
+    }
+    .image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 641px;
+      height: 578px;
+
+      .vector-one {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        img {
+          height: auto;
+        }
+      }
+      .vector-two {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+      .vector-three {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(50%) scale(0.5);
+        img {
+          height: auto;
+          width: auto;
+        }
+      }
+      img {
+        width: 641px;
+        height: 578px;
+        object-fit: cover;
+      }
+    }
+  }
+}

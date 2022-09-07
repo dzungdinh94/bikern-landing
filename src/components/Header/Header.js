@@ -1,22 +1,12 @@
 import React from "react";
 import "./header.scss";
+
 const Header = () => {
   return (
     <header className="header">
       <div className="w-1200 topbar">
         <div className="logo">
-          <div className="union">
-            <span className="b">B</span>
-            <span className="i">I</span>
-            <span className="k">K</span>
-            <span className="e">E</span>
-            <span className="r">R</span>
-            <span className="n">N</span>
-          </div>
-          <img
-            src="https://res.cloudinary.com/diot4imoq/image/upload/v1662369131/Vector_yewwj7.png"
-            alt=""
-          />
+          <img src="./assets/img/logo.png" alt="" />
         </div>
         <div className="content-right">
           <ul>
