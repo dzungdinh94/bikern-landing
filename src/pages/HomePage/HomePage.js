@@ -35,7 +35,6 @@ const HomePage = () => {
               </div>
               <div className="list-item">
                 <div className="item">
-                  ơ
                   <img src="./assets/img/marketplace_white 1.png" alt="" />
                   <h3>Purchase NFTS</h3>
                   <p>
