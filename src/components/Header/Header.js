@@ -34,6 +34,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="icon-header">
+        <div className="logo">
+          <img src="/assets/img/logo.png" alt="logo" />
+        </div>
         {!isHeader && (
           <FaAlignJustify
             onClick={() => {

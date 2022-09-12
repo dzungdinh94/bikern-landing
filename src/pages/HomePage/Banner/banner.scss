@@ -1,7 +1,6 @@
 @import "../../../styles/mixin.scss";
 
 .banner {
-  // height: 578px;
   .content {
     display: flex;
     justify-content: space-between;
@@ -12,12 +11,13 @@
     .wrap-title {
       display: flex;
       align-items: center;
-      // height: 578px;
       .title {
         display: flex;
         flex-direction: column;
-        // align-items: center;
         z-index: 1;
+        @include mobile {
+          text-align: center;
+        }
         h3 {
           font-family: "Race Sport Free";
           font-style: normal;
