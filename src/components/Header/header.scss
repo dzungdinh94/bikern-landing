@@ -1,3 +1,5 @@
+@import "../../styles/mixin.scss";
+
 .header {
   display: flex;
   height: 106px;
@@ -8,14 +10,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     .logo {
       display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0px;
-      gap: 11px;
-      width: 205.95px;
+      // gap: 11px;
+      // width: 205.95px;
       height: 46px;
+      @include mobile {
+        margin-right: 20px;
+      }
     }
     .content-right {
       display: flex;
@@ -34,10 +40,15 @@
         color: #ffffff;
         text-decoration: none;
         a {
+          display: block;
+          margin-right: 8px;
           color: #fff;
         }
       }
       .play-now {
+        @include mobile {
+          display: none;
+        }
         display: flex;
         justify-content: center;
         align-items: center;

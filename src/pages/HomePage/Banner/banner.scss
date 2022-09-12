@@ -1,17 +1,22 @@
+@import "../../../styles/mixin.scss";
+
 .banner {
-  height: 578px;
+  // height: 578px;
   .content {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      display: block;
+      padding-top: 20px;
+    }
     .wrap-title {
       display: flex;
       align-items: center;
-      height: 578px;
-
+      // height: 578px;
       .title {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         z-index: 1;
         h3 {
           font-family: "Race Sport Free";
@@ -35,47 +40,43 @@
         }
       }
     }
-    .image {
-      // position: absolute;
-      // left: 70%;
-      // transform: translateX(-70%);
-      width: 641px;
-      height: 578px;
+    // .image {
+    //   // width: 641px;
+    //   // height: 578px;
+    //   .vector-one {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 50%;
+    //     transform: translate(-100%, -50%);
+    //     img {
+    //       height: auto;
+    //     }
+    //   }
+    //   .vector-two {
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
 
-      .vector-one {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-100%, -50%);
-        img {
-          height: auto;
-        }
-      }
-      .vector-two {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        img {
-          width: auto;
-          height: auto;
-        }
-      }
-      .vector-three {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        transform: translateX(50%) scale(0.5);
-        img {
-          height: auto;
-          width: auto;
-        }
-      }
-      img {
-        width: 641px;
-        height: 578px;
-        object-fit: cover;
-      }
-    }
+    //     img {
+    //       width: auto;
+    //       height: auto;
+    //     }
+    //   }
+    //   .vector-three {
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    //     transform: translateX(50%) scale(0.5);
+    //     img {
+    //       height: auto;
+    //       width: auto;
+    //     }
+    //   }
+    //   // img {
+    //   //   width: 641px;
+    //   //   height: 578px;
+    //   //   object-fit: cover;
+    //   // }
+    // }
   }
 }

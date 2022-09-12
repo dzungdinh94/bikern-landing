@@ -3,9 +3,9 @@ import "./styles/index.scss";
 import HomePage from "./pages/HomePage";
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <HomePage />
-    </div>
+    </React.Fragment>
   );
 };
 

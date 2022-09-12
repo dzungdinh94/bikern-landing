@@ -1,5 +1,7 @@
+@import "./mixin.scss";
 .w-1200 {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 100px;
+  @include mobile {
+    padding: 0 50px;
+  }
 }

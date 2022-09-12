@@ -7,7 +7,6 @@ const HomePage = () => {
   return (
     <section className="home-page">
       <Header />
-
       <div className="bg">
         <Banner />
         <section className="what-bikern">
