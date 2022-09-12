@@ -10,24 +10,12 @@ const Header = () => {
         </div>
         <div className="content-right">
           <ul>
-            <li>
-              <a href=" ">Home</a>
-            </li>
-            <li>
-              <a href=" ">Feautures</a>
-            </li>
-            <li>
-              <a href=" ">NTFs</a>
-            </li>
-            <li>
-              <a href=" ">Tokenomics</a>
-            </li>
-            <li>
-              <a href=" ">Roadmap</a>
-            </li>
-            <li>
-              <a href=" ">Team</a>
-            </li>
+            <a href=" ">Home</a>
+            <a href="#feature">Feautures</a>
+            <a href="#ntf">NTFs</a>
+            <a href="#tokennomic">Tokenomics</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#team">Team</a>
           </ul>
           <div className="play-now">
             <span>PLAY NOW</span>

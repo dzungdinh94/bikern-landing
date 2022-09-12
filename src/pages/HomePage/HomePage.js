@@ -7,6 +7,7 @@ const HomePage = () => {
   return (
     <section className="home-page">
       <Header />
+
       <div className="bg">
         <Banner />
         <section className="what-bikern">
@@ -26,7 +27,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className="bikern-feature">
+        <section id="feature" className="bikern-feature">
           <div className="w-1200">
             <div className="content">
               <div className="title">
@@ -101,7 +102,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className="ntf-showroom">
+        <section id="ntf" className="ntf-showroom">
           <div className="w-1200">
             <div className="content">
               <h3 className="title">NTF Showroom</h3>
@@ -218,19 +219,19 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className="roadmap">
+        <section id="roadmap" className="roadmap">
           <div className="content">
             <div className="bg-img">
               <img src="./assets/img/Group 427.png" alt="" />
             </div>
           </div>
         </section>
-        <section className="token-nomic">
+        <section id="tokennomic" className="token-nomic">
           <div className="content">
             <img src="./assets/img/Group 416.png" alt="" />
           </div>
         </section>
-        <section className="our-team">
+        <section id="team" className="our-team">
           <div className="w-1200">
             <div className="content">
               <div className="title">
