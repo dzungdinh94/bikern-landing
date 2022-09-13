@@ -3,7 +3,8 @@
 .banner {
   .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     @include mobile {
       display: block;
       padding-top: 20px;
