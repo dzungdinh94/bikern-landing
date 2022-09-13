@@ -3,6 +3,10 @@ import "./homepage.scss";
 import Header from "../../components/Header";
 import Banner from "./Banner";
 import Footer from "../../components/Footer/Footer";
+import BikernFeature from "./BikernFeature/BikernFeature";
+import ShowRoom from "./ShowRoom/ShowRoom";
+import OurTeam from "./OurTeam";
+import Roadmap from "./Roadmap/Roadmap";
 
 const HomePage = () => {
   return (
@@ -27,51 +31,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section id="feature" className="bikern-feature">
-          <div className="w-1200">
-            <div className="content">
-              <div className="title">
-                <img src="./assets/img/04.png" alt="" />
-                <h3>Bikern Features</h3>
-              </div>
-              <div className="list-item">
-                <div className="item">
-                  <img src="./assets/img/marketplace_white 1.png" alt="" />
-                  <h3>Purchase NFTS</h3>
-                  <p>
-                    Users can purchase NFTs in the <br /> form of virtual
-                    bicycles which are <br /> linked to real cycling activities.
-                  </p>
-                </div>
-                <div className="item">
-                  <img src="./assets/img/coin 1.png" alt="" />
-                  <h3>Earn Tokens</h3>
-                  <p>
-                    By cycling around, users will earn <br /> our in-app tokens
-                    (Main token: <br /> Bikern/BKN; Utility token: Bikern <br />
-                    Utility/BKU), BKN can be use to <br /> buy NFT
-                  </p>
-                </div>
-                <div className="item">
-                  <img src="./assets/img/cycling 1.png" alt="" />
-                  <h3>Races & Competition </h3>
-                  <p>
-                    Stake BKN to join Races and <br /> Competitions, where biker
-                    can <br /> challenge 1 vs 1 or team vs team.
-                  </p>
-                </div>
-                <div className="item">
-                  <img src="./assets/img/stats 1.png" alt="" />
-                  <h3>Upgrade & Repair </h3>
-                  <p>
-                    Users can purchase NFTs in the <br /> form of virtual
-                    bicycles which are <br /> linked to real cycling activities.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <BikernFeature />
         <section className="getting-started">
           <div className="w-1200">
             <div className="content">
@@ -102,252 +62,14 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section id="ntf" className="ntf-showroom">
-          <div className="w-1200">
-            <div className="content">
-              <h3 className="title">NTF Showroom</h3>
-              <div className="list-item">
-                <div className="item">
-                  <div className="img">
-                    <img src="./assets/img/Rectangle 1351.png" alt="" />
-                    <div className="arrow-left">
-                      <img src="./assets/img/Group 424.png" alt="" />
-                    </div>
-                    <div className="level">
-                      <div className="content">
-                        <div className="item">
-                          <p>Luck</p>
-                          <span>Level 2</span>
-                        </div>
-                        <div className="item child">
-                          <p>Durability</p>
-                          <span>Level 2</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="info">
-                    <div className="code"># 25698765</div>
-                    <div className="class">
-                      <span>Class</span>
-                      <b>City</b>
-                    </div>
-                    <div className="durability">
-                      <span>Durability</span>
-                      <span>
-                        <b>60:00 </b> minutes
-                      </span>
-                    </div>
-                    <div className="luck">
-                      <span>Luck</span>
-                      <b>0.5%</b>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="img">
-                    <img src="./assets/img/Rectangle 1353.png" alt="" />
-                    <div className="level">
-                      <div className="content">
-                        <div className="item">
-                          <p>Luck</p>
-                          <span>Level 2</span>
-                        </div>
-                        <div className="item child">
-                          <p>Durability</p>
-                          <span>Level 2</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="info">
-                    <div className="code"># 25698765</div>
-                    <div className="class">
-                      <span>Class</span>
-                      <b>City</b>
-                    </div>
-                    <div className="durability">
-                      <span>Durability</span>
-                      <span>
-                        <b>60:00 </b> minutes
-                      </span>
-                    </div>
-                    <div className="luck">
-                      <span>Luck</span>
-                      <b>0.5%</b>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="img">
-                    <img src="./assets/img/Rectangle 1352.png" alt="" />
-                    <div className="arrow-right">
-                      <img src="./assets/img/Group 425.png" alt="" />
-                    </div>
-                    <div className="level">
-                      <div className="content">
-                        <div className="item">
-                          <p>Luck</p>
-                          <span>Level 2</span>
-                        </div>
-                        <div className="item child">
-                          <p>Durability</p>
-                          <span>Level 2</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="info">
-                    <div className="code"># 25698765</div>
-                    <div className="class">
-                      <span>Class</span>
-                      <b>City</b>
-                    </div>
-                    <div className="durability">
-                      <span>Durability</span>
-                      <span>
-                        <b>60:00 </b> minutes
-                      </span>
-                    </div>
-                    <div className="luck">
-                      <span>Luck</span>
-                      <b>0.5%</b>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="roadmap" className="roadmap">
-          <div className="mobile-roadmap">
-            <img src="/assets/img/Group 415.png" alt="" />
-            <div className="list-item">
-              <div className="item">
-                <h3 className="title">Q1, 2022</h3>
-                <p>Ideas Generated, Team Established , Website Development</p>
-              </div>
-              <div className="item">
-                <h3 className="title">Q2, 2022</h3>
-                <p>
-                  App design and development, Launching Demo App, Design NFT
-                  Bikes, Contract Audit, Community building{" "}
-                </p>
-              </div>
-              <div className="item">
-                <h3 className="title">Q3, 2022</h3>
-                <p>
-                  Launch Open Beta App, Private/Public Sales, Dex Listing, AMA
-                  Quest & Challenge launching, NFT minting and Marketplace
-                </p>
-              </div>
-              <div className="item">
-                <h3 className="title">Q4, 2022</h3>
-                <p>
-                  Update Contract V2, Rental system Launch, Staking pools added
-                  PVP and social mode added, Skin for NFT cycle added, CEX
-                  listing
-                </p>
-              </div>
-              <div className="item">
-                <h3 className="title">Q1, 2023</h3>
-                <p>Update more features, Launch app on Smart Watch</p>
-              </div>
-            </div>
-          </div>
-          <div className="content">
-            <div className="bg-img">
-              <img src="./assets/img/Group 427.png" alt="" />
-            </div>
-          </div>
-        </section>
+        <ShowRoom />
+        <Roadmap />
         <section id="tokennomic" className="token-nomic">
           <div className="content">
             <img src="./assets/img/Group 416.png" alt="" />
           </div>
         </section>
-        <section id="team" className="our-team">
-          <div className="w-1200">
-            <div className="content">
-              <div className="title">
-                <h3>Our team</h3>
-              </div>
-              <div className="list-item">
-                <div
-                  className="item"
-                  style={{
-                    background:
-                      "linear-gradient(148.7deg, #79e7ff -26.04%, #a7dfff 166.02%)",
-                  }}
-                >
-                  <img src="./assets/img/avt1.png" alt="" />
-                  <div className="name">
-                    <span>James Cornel</span>
-                    <p>Project Founder</p>
-                  </div>
-                </div>
-                <div
-                  className="item"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #8DC788 0%, #B4D861 100%)",
-                  }}
-                >
-                  <img src="./assets/img/avt2.png" alt="" />
-                  <div className="name">
-                    <span>Ben Do</span>
-                    <p>
-                      Graphic Design Artist <br /> & Illustrator
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="item"
-                  style={{
-                    background:
-                      "linear-gradient(148.7deg, #79e7ff -26.04%, #a7dfff 166.02%)",
-                  }}
-                >
-                  <img src="./assets/img/avt3.png" alt="" />
-                  <div className="name">
-                    <span>Jack Ma </span>
-                    <p>
-                      Head of Security <br /> Cybersecurity Developer
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="item"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #8DC788 0%, #B4D861 100%)",
-                  }}
-                >
-                  <img src="./assets/img/avt4.png" alt="" />
-                  <div className="name">
-                    <span>Ming Tan</span>
-                    <p>Head of Social Media</p>
-                  </div>
-                </div>
-                <div
-                  className="item"
-                  style={{
-                    background:
-                      "linear-gradient(148.7deg, #79e7ff -26.04%, #a7dfff 166.02%)",
-                  }}
-                >
-                  <img src="./assets/img/avt5.png" alt="" />
-                  <div className="name">
-                    <span>Micheal Lou</span>
-                    <p>
-                      Community Manager <br /> Crypto Entrepreneur
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <OurTeam />
       </div>
       <Footer />
     </section>
