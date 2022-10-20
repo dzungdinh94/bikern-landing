@@ -1,21 +1,94 @@
+@import "../../styles/mixin.scss";
+
 .header {
   display: flex;
   height: 106px;
   align-items: center;
   background: #2e2e3d;
 
+  @include mobile {
+    height: 50px;
+  }
+
+  .icon-header {
+    display: none;
+  }
+
+  @include mobile {
+    .icon-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      width: 100%;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        color: #fff;
+      }
+      .menu-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 16px;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        background: #2e2e3d;
+        transition: ease-in 0.4s;
+        transform: translateX(-200%);
+        a {
+          padding: 6px 0;
+          color: #fff;
+        }
+
+        span {
+          position: absolute;
+          right: 10px;
+          top: 6px;
+          font-size: 2rem;
+          svg {
+            color: #fff;
+          }
+        }
+      }
+      .active {
+        transform: translateX(0);
+      }
+    }
+  }
+
   .topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    @include mobile {
+      display: none;
+    }
     .logo {
       display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0px;
-      gap: 11px;
-      width: 205.95px;
       height: 46px;
+      @include mobile {
+        margin-right: 20px;
+      }
     }
     .content-right {
       display: flex;
@@ -34,10 +107,15 @@
         color: #ffffff;
         text-decoration: none;
         a {
+          display: block;
+          margin-right: 8px;
           color: #fff;
         }
       }
       .play-now {
+        @include mobile {
+          display: none;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
